@@ -36,7 +36,7 @@ jobs:
         DUPLETS: [{PLACEHOLDER-1}]:[{REPLACEMENT-1}] [{PLACEHOLDER-2}]:[{REPLACEMENT-2}] ... [{PLACEHOLDER-N}]:[{REPLACEMENT-N}]
 ```
 
-Any placeholder-replacement given as input for the action (throught `with.duplets`) will apply the placeholder swapping in every files you specify (see below).
+Any placeholder-replacement given as environment variable for the action will apply the placeholder swapping in every files you specify (see below).
 
 **Note:** everything contained in single curly brackets (`{ }`) needs to be replaced by your desired values
 
