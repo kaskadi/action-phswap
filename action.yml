@@ -1,9 +1,5 @@
 name: 'action-phswap'
-description: 'Swaps placeholders for their given replacement value.'
-inputs:
-  duplets:
-    description: '[placeholder]:[replacement] duplets (space separated)'
-    required: true
+description: 'Swaps placeholders for their given replacement value'
 runs:
   using: 'node12'
   main: 'index.js'
