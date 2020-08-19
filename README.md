@@ -33,10 +33,10 @@ jobs:
     - name: {YOUR-STEP-NAME}
       uses: kaskadi/action-phswap@master
       with:
-        args: [{PLACEHOLDER-1}]:[{REPLACEMENT-1}] [{PLACEHOLDER-2}]:[{REPLACEMENT-2}] ... [{PLACEHOLDER-N}]:[{REPLACEMENT-N}]
+        duplets: [{PLACEHOLDER-1}]:[{REPLACEMENT-1}] [{PLACEHOLDER-2}]:[{REPLACEMENT-2}] ... [{PLACEHOLDER-N}]:[{REPLACEMENT-N}]
 ```
 
-Any placeholder-replacement given as argument for the action will apply the placeholder swapping in every files you specify (see below).
+Any placeholder-replacement given as input for the action (throught `with.duplets`) will apply the placeholder swapping in every files you specify (see below).
 
 **Note:** everything contained in single curly brackets (`{ }`) needs to be replaced by your desired values
 
