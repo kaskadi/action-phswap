@@ -12,17 +12,11 @@
 
 ****
 
-# Testing
-
-`mocha`, `chai` & `standard` are available as dev dependencies.
-
-****
-
 **This action is updating its dependencies every Sunday at 7AM CET**
 
 # What is this action for?
 
-:point_right: **Describe here what the action should do** :point_left:
+This action is replacing placeholder in files.
 
 # How to use it?
 
@@ -38,8 +32,35 @@ jobs:
     - uses: actions/checkout@v2
     - name: {YOUR-STEP-NAME}
       uses: kaskadi/action-phswap@master
+      with:
+        args: [{PLACEHOLDER-1}]:[{REPLACEMENT-1}] [{PLACEHOLDER-2}]:[{REPLACEMENT-2}] ... [{PLACEHOLDER-N}]:[{REPLACEMENT-N}]
 ```
 
-:point_down: **Here goes any extra details on how to use the action (environment variables/inputs description for example)** :point_down:
+Any placeholder-replacement given as argument for the action will apply the placeholder swapping in every files you specify (see below).
 
 **Note:** everything contained in single curly brackets (`{ }`) needs to be replaced by your desired values
+
+In order to tell the action which file to check for replacement, you need to add the following field into your `package.json` file (root level):
+```
+"kaskadi": {
+  "ph-swap": {
+    "files": [
+      {
+        "src": "file1.ext",
+        "dest": "path/to/file1.ext"
+      },
+      {
+        "src": "path/to/file2.ext",
+        "dest": "path/to/where/is/file2.ext"
+      },
+      {
+        "src": "folder1/",
+        "dest": "path/to/folder1/"
+      }
+    ]
+  }
+}
+```
+
+**Notes:**
+- swapping a folder will always do a recursive swap (go through all folders and files from the given folder)
