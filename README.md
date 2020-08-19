@@ -1,14 +1,14 @@
-![](https://img.shields.io/github/workflow/status/kaskadi/template-action/update?label=dependencies%20updated&logo=npm)
+![](https://img.shields.io/github/workflow/status/kaskadi/action-phswap/update?label=dependencies%20updated&logo=npm)
 
 **CodeClimate**
 
-[![](https://img.shields.io/codeclimate/maintainability/kaskadi/template-action?label=maintainability&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/template-action)
-[![](https://img.shields.io/codeclimate/tech-debt/kaskadi/template-action?label=technical%20debt&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/template-action)
-<!-- [![](https://img.shields.io/codeclimate/coverage/kaskadi/template-action?label=test%20coverage&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/template-action) -->
+[![](https://img.shields.io/codeclimate/maintainability/kaskadi/action-phswap?label=maintainability&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/action-phswap)
+[![](https://img.shields.io/codeclimate/tech-debt/kaskadi/action-phswap?label=technical%20debt&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/action-phswap)
+<!-- [![](https://img.shields.io/codeclimate/coverage/kaskadi/action-phswap?label=test%20coverage&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/action-phswap) -->
 
 **LGTM**
 
-[![](https://img.shields.io/lgtm/grade/javascript/github/kaskadi/template-action?label=code%20quality&logo=lgtm)](https://lgtm.com/projects/g/kaskadi/template-action/?mode=list)
+[![](https://img.shields.io/lgtm/grade/javascript/github/kaskadi/action-phswap?label=code%20quality&logo=lgtm)](https://lgtm.com/projects/g/kaskadi/action-phswap/?mode=list)
 
 ****
 
@@ -37,7 +37,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: {YOUR-STEP-NAME}
-      uses: kaskadi/template-action@master
+      uses: kaskadi/action-phswap@master
 ```
 
 :point_down: **Here goes any extra details on how to use the action (environment variables/inputs description for example)** :point_down:
