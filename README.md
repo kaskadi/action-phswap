@@ -12,8 +12,6 @@
 
 ****
 
-**This action is updating its dependencies every Sunday at 7AM CET**
-
 # What is this action for?
 
 This action is replacing placeholder in files.
