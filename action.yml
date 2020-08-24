@@ -1,5 +1,6 @@
 name: 'action-phswap'
-description: ''
+description: 'Swaps placeholders for their given replacement value'
 runs:
   using: 'node12'
-  main: 'index.js'
+  pre: 'src/pre.js'
+  main: 'src/main.js'
