@@ -1,8 +1,8 @@
 {
   "name": "action-phswap",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Swaps placeholders for their given replacement value",
+  "main": "action.yml",
   "scripts": {
     "test": "standard --fix && mocha test/*.test.js --require test/mocha-color-setter.js",
     "coverage": "nyc npm run test"
