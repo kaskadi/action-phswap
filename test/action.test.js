@@ -5,24 +5,16 @@ const chai = require('chai')
 const { assert } = require('chai')
 chai.should()
 
-// *************
-// Write your tests here
 describe('action-phswap', function () {
-  // this.timeout(10000)
-  // uncomment this if you want to raise the timeout cap for your whole test (when you need to perform long async tasks). You can also follow the same logic per describe block or per it block to increase the timeout cap
-  // if your describe/it callbacks are arrow functions, you need to use the following syntax: describe('...', () => {}).timeout(...) but be aware that this won't apply to hooks!
-
-  // ******* Example tests
-  before(function () {
+  const exp = true
+  it('should process inputs', async function () {
     process.env.DUPLETS = '[placeholder]:[value]'
-    runAction(steps)
+    await runAction(steps)
+    assert(exp === true, 'True is true...')
   })
-  describe('Placeholder test', function () {
-    it('should pass', function () {
-      const exp = true
-      assert(exp === true, 'True is true...')
-    })
+  it('should warn that there is no inputs if none found', async function () {
+    delete process.env.DUPLETS
+    await runAction(steps)
+    assert(exp === true, 'True is true...')
   })
-  // *******
 })
-// *************
