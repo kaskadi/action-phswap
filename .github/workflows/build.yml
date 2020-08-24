@@ -18,3 +18,5 @@ jobs:
       run: npm i
     - name: Test
       run: npm test
+      env:
+        DUPLETS: '[placeholder]:[value]'
