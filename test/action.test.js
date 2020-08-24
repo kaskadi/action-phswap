@@ -10,11 +10,11 @@ describe('action-phswap', function () {
   it('should process inputs', async function () {
     process.env.DUPLETS = '[placeholder]:[value]'
     await runAction(steps)
-    assert(exp === true, 'True is true...')
+    assert(exp === true)
   })
   it('should warn that there is no inputs if none found', async function () {
     delete process.env.DUPLETS
     await runAction(steps)
-    assert(exp === true, 'True is true...')
+    assert(exp === true)
   })
 })
