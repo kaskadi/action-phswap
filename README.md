@@ -34,11 +34,18 @@ jobs:
         DUPLETS: [{PLACEHOLDER-1}]:[{REPLACEMENT-1}] [{PLACEHOLDER-2}]:[{REPLACEMENT-2}] ... [{PLACEHOLDER-N}]:[{REPLACEMENT-N}]
 ```
 
-Any placeholder-replacement given as environment variable for the action will apply the placeholder swapping in every files you specify (see below).
-
 **Note:** everything contained in single curly brackets (`{ }`) needs to be replaced by your desired values
 
-In order to tell the action which file to check for replacement, you need to add the following field into your `package.json` file (root level):
+**Environment variables:**
+|  Variable | Required | Description                                                                                                                                     |
+|:---------:|:--------:|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| `DUPLETS` |    Yes   | `placeholder`:`replacement value` duplets. The swapping will be applied to every files provided in the configuration of this action (see below) |
+
+---
+
+**Swap configuration:**
+In order to tell the action which files to check for replacement, you need to add the following field into your `package.json` file (root level):
+
 ```
 "kaskadi": {
   "ph-swap": {
@@ -60,5 +67,4 @@ In order to tell the action which file to check for replacement, you need to add
 }
 ```
 
-**Notes:**
-- swapping a folder will always do a recursive swap (go through all folders and files from the given folder)
+_Note:_ swapping a folder will always do a recursive swap (go through all folders and files from the given folder)
