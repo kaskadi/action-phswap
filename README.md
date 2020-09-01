@@ -20,7 +20,7 @@ This action is replacing placeholders in files.
 
 You can use the following code as a new _GitHub Actions Workflow_:
 
-```
+```yaml
 name: {YOUR-ACTION-NAME}
 on: [{YOUR-ACTION-EVENT}]
 jobs:
@@ -46,7 +46,7 @@ jobs:
 **Swap configuration:**
 In order to tell the action which files to check for replacement, you need to add the following field into your `package.json` file (root level):
 
-```
+```json
 "kaskadi": {
   "ph-swap": {
     "files": [
