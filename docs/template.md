@@ -18,7 +18,7 @@
 **Swap configuration:**
 In order to tell the action which files to check for replacement, you need to add the following field into your `package.json` file (root level):
 
-```
+```json
 "kaskadi": {
   "ph-swap": {
     "files": [
