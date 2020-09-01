@@ -14,7 +14,7 @@
 
 # What is this action for?
 
-This action is replacing placeholder in files.
+This action is replacing placeholders in files.
 
 # How to use it?
 
@@ -31,15 +31,15 @@ jobs:
     - name: {YOUR-STEP-NAME}
       uses: kaskadi/action-phswap@master
       env:
-        DUPLETS: [{PLACEHOLDER-1}]:[{REPLACEMENT-1}] [{PLACEHOLDER-2}]:[{REPLACEMENT-2}] ... [{PLACEHOLDER-N}]:[{REPLACEMENT-N}]
+        DUPLETS: {DUPLETS-VALUE}
 ```
 
 **Note:** everything contained in single curly brackets (`{ }`) needs to be replaced by your desired values
 
 **Environment variables:**
-|  Variable | Required | Description                                                                                                                                     |
-|:---------:|:--------:|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `DUPLETS` |    Yes   | `placeholder`:`replacement value` duplets. The swapping will be applied to every files provided in the configuration of this action (see below) |
+|  Variable | Required | Description                                                                                                                                                                                                                                                                          |
+| :-------: | :------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `DUPLETS` |  `true`  | `placeholder`:`replacement value` duplets. Syntax should be: `[{PLACEHOLDER-1}]:[{REPLACEMENT-1}] [{PLACEHOLDER-2}]:[{REPLACEMENT-2}] ... [{PLACEHOLDER-N}]:[{REPLACEMENT-N}]`. The swapping will be applied to every files provided in the configuration of this action (see below) |
 
 ---
 
