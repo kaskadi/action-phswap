@@ -1,5 +1,9 @@
 name: 'action-phswap'
-description: 'Swaps placeholders for their given replacement value'
+description: 'This action is replacing placeholders in files.'
+env:
+  DUPLETS:
+    description: '`placeholder`:`replacement value` duplets. Syntax should be: `[{PLACEHOLDER-1}]:[{REPLACEMENT-1}] [{PLACEHOLDER-2}]:[{REPLACEMENT-2}] ... [{PLACEHOLDER-N}]:[{REPLACEMENT-N}]`. The swapping will be applied to every files provided in the configuration of this action (see below)'
+    required: true
 runs:
   using: 'node12'
   pre: 'src/pre.js'
