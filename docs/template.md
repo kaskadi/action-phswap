@@ -1,4 +1,5 @@
 [![Build status](https://img.shields.io/github/workflow/status/kaskadi/action-phswap/build?label=build&logo=mocha)](https://github.com/kaskadi/action-phswap/actions?query=workflow%3Abuild)
+[![Static code analysis status](https://img.shields.io/github/workflow/status/kaskadi/action-phswap/analyze-code?label=codeQL&logo=github)](https://github.com/kaskadi/action-phswap/actions?query=workflow%3Aanalyze-code)
 [![Docs generation status](https://img.shields.io/github/workflow/status/kaskadi/action-phswap/generate-docs?label=docs&logo=read-the-docs)](https://github.com/kaskadi/action-phswap/actions?query=workflow%3Agenerate-docs)
 
 **CodeClimate**
@@ -6,10 +7,6 @@
 [![](https://img.shields.io/codeclimate/maintainability/kaskadi/action-phswap?label=maintainability&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/action-phswap)
 [![](https://img.shields.io/codeclimate/tech-debt/kaskadi/action-phswap?label=technical%20debt&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/action-phswap)
 [![](https://img.shields.io/codeclimate/coverage/kaskadi/action-phswap?label=test%20coverage&logo=Code%20Climate)](https://codeclimate.com/github/kaskadi/action-phswap)
-
-**LGTM**
-
-[![](https://img.shields.io/lgtm/grade/javascript/github/kaskadi/action-phswap?label=code%20quality&logo=lgtm)](https://lgtm.com/projects/g/kaskadi/action-phswap/?mode=list)
 
 ****
 
