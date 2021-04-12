@@ -1,6 +1,6 @@
 {
   "name": "action-phswap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Swaps placeholders for their given replacement value",
   "main": "action.yml",
   "scripts": {
